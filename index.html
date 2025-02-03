@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDoList</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,10 +13,13 @@
     </header>
 
     <main> 
-        <input type="text" id="myInput" placeholder="Title...">
-        <button id="enterbtn">Enter</button>
+        <div class="input-container">
+            <input type="text" id="myInput" placeholder="Enter a task...">
+            <button id="enterbtn">Add</button>
+        </div>
+        <ul id="taskList"></ul> <!-- Task list -->
     </main>
 
-    <script src="script.js"></script> <!-- Moved here for better performance -->
+    <script src="script.js"></script> <!-- JavaScript file -->
 </body>
 </html>
