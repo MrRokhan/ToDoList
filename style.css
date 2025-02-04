@@ -41,3 +41,24 @@ main {
 #enterbtn:hover {
     background-color: #218838; /* Darker green on hover */
 }
+
+ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    width: 60%; /* Make the list the same width as input */
+}
+
+li {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: left; /* Align text to the left */
+    background: #f4f4f4; /* Light background for tasks */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between; /* Space between text and delete button */
+    align-items: center;
+}

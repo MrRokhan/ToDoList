@@ -1,7 +1,6 @@
 const enter = document.getElementById("enterbtn");
 const textInput = document.getElementById("myInput");
-const taskList = document.createElement("ul"); // Create task list
-document.body.appendChild(taskList); // Append to body
+const taskList = document.getElementById("taskList"); // Select existing ul
 
 // Event listener for button click
 enter.addEventListener("click", addTask);
