@@ -25,7 +25,21 @@ function addTask() {
     const li = document.createElement("li");
     li.textContent = taskText;
 
-    taskList.appendChild(li); // Add task to the list
+    // Create delete button
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "❌"; // Small 'X' as delete icon
+    deleteBtn.style.marginLeft = "10px"; // Add spacing
+
+    // Attach event listener to delete the task
+    deleteBtn.addEventListener("click", () => {
+        taskList.removeChild(li);
+    });
+
+    // Append delete button to list item
+    li.appendChild(deleteBtn);
+
+    // Append task to list
+    taskList.appendChild(li);
 
     textInput.value = ""; // Clear input field
 }
