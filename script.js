@@ -42,3 +42,5 @@ function addTask() {
 
     textInput.value = ""; // Clear input field
 }
+
+console.log("hi")
